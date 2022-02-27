@@ -5,7 +5,6 @@ The programm will run a local server on your PC upon startup. Run "main.py". You
 ***To try it out you can send a POST request to the following URL via an API-Platform like Postman.***
 http://127.0.0.1:8000/post_image
 
-
 ## Access via API-Platform: 
 - set the type of request from *"GET"* to ***"POST"***
 - Go to *"Body"*
@@ -30,3 +29,5 @@ http://127.0.0.1:8000/post_image
  
 - The ***digit recognition model*** was trained with a mixture of a dataset reminiscent of the MNIST-Dataset and additional images I collected myself, since there were too few images of printed numbers which are more useful here. For that purpose Sudoku_Digitizer.py also has functions dedicated to saving test images. Getting "useful" images is pretty tedious and requires a lot of manual curation especially at the start, so the model ***isn't as well trained I'd have liked it to be.*** I'll try to keep it updated.  
 - For the time being I ***recommend using the test images I provided*** to play the actual game. They're confirmed to work. If a number is misclassified, it's liekly the programm won't find a valid solution meaning yuo can't lock in numbers.
+
+- I have also created a Docker Image from the project that will be pushed to dockerhub once I've fixed a an error. 
